@@ -4,7 +4,7 @@ In this project I have demonstrated how to use functions like revert(),require()
 
 ## Description
 
-In this project i have made a contract called "Transactions" in which I have made functions like withdraw, Transfer, balance and deposit.
+In this project i have made a contract called "Transactions" in which I have made functions like withdraw, Transfer, balance and deposit. In the deposit function I have used require statement that will check if the amount to be deposited is greater than zero or not.. if it is only then it will be executed and if the condition is false it will output the message "deposit amount needs to be greater than zero." After that I have made an Transfer function which needs recipient address and again I have used require statement to check if the sender have that amount he is transferring. I have also used the assert statement that checks if the balance has been funded to the recepient.Generally assert is used for checking general errors. Then I made a withdraw function in which i have used revert statement that checks if the withdrawer have sufficient fund to be withdrawn if not then it reverts back to its initial state and the remaining gas is refunded. 
 
 ## Getting Started
 
@@ -52,7 +52,7 @@ To compile the code, click on the "Solidity Compiler" tab in the left-hand sideb
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "transact" contract from the dropdown menu, and then click on the "Deploy" button.
 
-Once the contract is deployed, you can interact with it by calling the sayHello function. Click on the "transact" contract in the left-hand sidebar, and then click on the "deposit,withdraw,blances or transfer functions. Finally, click on the "transact" button to execute the function and retrieve the function related message int the console.
+Once the contract is deployed, you can interact with it by calling the deposit/transfer/withdraw function.After that enter the desired inputs and click on the "transact"  button to retrieve the function related message in the console.
 
 
 ## Authors
